@@ -1,0 +1,6 @@
+#ignore(generated) ".classpath" files
+.classpath
+.project
+#ignore object
+.settings
+/bin
