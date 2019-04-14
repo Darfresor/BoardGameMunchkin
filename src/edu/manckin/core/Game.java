@@ -9,13 +9,13 @@ public class Game {
 	 static String ShowMenu(Integer MenuType){
 		 String sResult = null;
 		if(MenuType ==1){
-			sResult ="Выберите действие:"+"\n";
-			sResult = sResult + "1.Текущий статус"+"\n";
-			sResult = sResult + "2.Экипировка"+"\n";
-			sResult = sResult + "3.Открыть двери"+"\n";
-			sResult = sResult + "0.Выход"+"\n";	
+			sResult ="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:"+"\n";
+			sResult = sResult + "1.пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"+"\n";
+			sResult = sResult + "2.пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"+"\n";
+			sResult = sResult + "3.пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ"+"\n";
+			sResult = sResult + "0.пїЅпїЅпїЅпїЅпїЅ"+"\n";	
 			
-			System.out.println(sResult); //тест
+			System.out.println(sResult); //С‚РµСЃС‚ РєРѕРґРёСЂРѕРІРєРё С‡Р°СЃС‚СЊ2
 		}
 		return sResult;
 	}
@@ -25,10 +25,10 @@ public class Game {
 		 
 		 
 		 Log SystemLog = new Log();
-		 SystemLog.addInfo("Создание персонажа..."+"\n");
+		 SystemLog.addInfo("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ..."+"\n");
 		 Character gamer1 = new Character("Sking91");
 		 SystemLog.addInfo(gamer1.getInfo());
-		 SystemLog.addInfo("Генерация колоды карт игрока..."+"\n");
+		 SystemLog.addInfo("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ..."+"\n");
 		 PackGenerate GamerPack = new PackGenerate();
 		 SystemLog.addInfo(GamerPack.DoorsPack.getCardInfo());
 		 SystemLog.addInfo(GamerPack.TreasuresPack.getCardInfo()); 
@@ -38,7 +38,7 @@ public class Game {
 		 
 		 while(isMenuPoint != 0){
 			 SystemLog.addInfo(ShowMenu(1));
-			 String sAction = null; // Переменная с текстом который ввел пользователь
+			 String sAction = null; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		        int nAction = 1; //
 		        try {
 		            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -52,7 +52,7 @@ public class Game {
 		        
 		 }
 		 
-		 SystemLog.addInfo("Игра завершена");
+		 SystemLog.addInfo("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		 
 	 }	
 }
