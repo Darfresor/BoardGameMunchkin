@@ -15,7 +15,7 @@ public class Game {
 			sResult = sResult + "3.Открыть двери"+"\n";
 			sResult = sResult + "0.Выход"+"\n";	
 			
-			System.out.println(sResult);
+			System.out.println(sResult); //тест
 		}
 		return sResult;
 	}
