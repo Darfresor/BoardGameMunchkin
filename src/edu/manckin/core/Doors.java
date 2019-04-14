@@ -1,8 +1,8 @@
 package edu.manckin.core;
 
 public class Doors {
-	String 	Name; //название карты
-	Integer Lvl; //уровень монстра
+	String 	Name; //РёРјСЏ РєР°СЂС‚С‹
+	Integer Lvl; //СѓСЂРѕРІРµРЅСЊ РјРѕРЅСЃС‚СЂР°
 	
 	public Doors(String sName, Integer numLvl){
 		Name =sName;
@@ -11,9 +11,9 @@ public class Doors {
 
 	String getCardInfo(){
 		String sResult;
-		sResult ="Карты дверей"+"\n";
-		sResult = sResult +"Имя Монстра: " +Name+"\n";
-		sResult = sResult +"Уровень Монстра: " +Lvl+"\n";
+		sResult ="РљР°СЂС‚С‹ РґРІРµСЂРµР№"+"\n";
+		sResult = sResult +"РРјСЏ РњРѕРЅСЃС‚СЂР°: " +Name+"\n";
+		sResult = sResult +"РЈСЂРѕРІРµРЅСЊ РјРѕРЅСЃС‚СЂР°: " +Lvl+"\n";
 		
 		return sResult;
 	}

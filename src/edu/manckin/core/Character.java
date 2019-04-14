@@ -13,10 +13,10 @@ public class Character {
 	
 	String getInfo(){
 		String sResult;
-		sResult ="Характеристики игрока"+"\n";
-		sResult = sResult +"Никнейм: " + sNickName + "\n";
-		sResult = sResult +"Уровень: " + numLvl + "\n";
-		sResult = sResult +"Бонусная сила: " + numBonuses + "\n";
+		sResult ="РҐР°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё РїРµСЂСЃРѕРЅР°Р¶Р°"+"\n";
+		sResult = sResult +"РќРёРєРЅРµР№Рј: " + sNickName + "\n";
+		sResult = sResult +"РЈСЂРѕРІРµРЅСЊ: " + numLvl + "\n";
+		sResult = sResult +"РЎРёР»Р°: " + numBonuses + "\n";
 		
 		return sResult;
 	}

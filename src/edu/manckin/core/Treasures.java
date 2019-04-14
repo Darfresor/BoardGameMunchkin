@@ -1,8 +1,8 @@
 package edu.manckin.core;
 
 public class Treasures {
-	String 	Name; //название карты
-	Integer Bonus; //Количество бонусов
+	String 	Name; //РёРјСЏ
+	Integer Bonus; //СЃРёР»Р°
 	
 	public Treasures(String sName, Integer  numBonus){
 		Name = sName;
@@ -11,9 +11,9 @@ public class Treasures {
 	
 	String getCardInfo(){
 		String sResult;
-		sResult ="Карты сокровищ"+"\n";
-		sResult = sResult +"Имя предмета: " +Name+"\n";;
-		sResult = sResult +"Бонусы: " +Bonus+"\n";;
+		sResult ="РљР°СЂС‚С‹ СЃРѕРєСЂРѕРІС‰Рё"+"\n";
+		sResult = sResult +"РќР°Р·РІР°РЅРёРµ: " +Name+"\n";;
+		sResult = sResult +"Р‘РѕРЅСѓСЃ: " +Bonus+"\n";;
 		
 		return sResult;
 	}

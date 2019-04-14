@@ -3,11 +3,11 @@ package edu.manckin.core;
 public class Log {
 	String GameLog;
  public Log(){
-	 GameLog = "Запуск игры"+"\n";;
+	 GameLog = "РС†РёРЅРёР°Р»РёР·Р°С†РёСЏ Р»РѕРіР° РёРіСЂС‹"+"\n";;
  }
  
  /**
-  * Добавление информации в лог
+  * РґРѕР±Р°РІР»РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РІ Р»РѕРі
   */
  void addInfo(String sTxt){
 	 GameLog = GameLog +sTxt+"\n";
