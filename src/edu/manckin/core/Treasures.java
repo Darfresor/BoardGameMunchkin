@@ -11,7 +11,7 @@ public class Treasures {
 	
 	String getCardInfo(){
 		String sResult;
-		sResult ="Карты сокровщи"+"\n";
+		sResult ="Карты сокровищ"+"\n";
 		sResult = sResult +"Название: " +Name+"\n";;
 		sResult = sResult +"Бонус: " +Bonus+"\n";;
 		

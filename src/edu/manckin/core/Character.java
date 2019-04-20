@@ -4,14 +4,18 @@ public class Character {
 	String sNickName;
 	Integer numLvl;
 	Integer numBonuses;
+	Doors DoorsPack;
+	Treasures TreasuresPack;
 	
 	public Character(String NickName){
 		sNickName = NickName;
 		numLvl = 1;
 		numBonuses = 0;
+		DoorsPack = new Doors("Теневой Нос",12);
+		TreasuresPack = new Treasures("Меч убийства всего и вся кроме кальмаров",3);
 	}
 	
-	String getInfo(){
+	String getCharacterInfo(){
 		String sResult;
 		sResult ="Характеристики персонажа"+"\n";
 		sResult = sResult +"Никнейм: " + sNickName + "\n";
@@ -20,4 +24,14 @@ public class Character {
 		
 		return sResult;
 	}
+	String getCardInfoString(){
+		String sResult;
+		sResult ="Карты игрока "+sNickName+" \n";
+		sResult = sResult +DoorsPack.getCardInfo() + "\n";
+		sResult = sResult +TreasuresPack.getCardInfo() + "\n";
+		
+		return sResult;
+	}
+	
+
 }

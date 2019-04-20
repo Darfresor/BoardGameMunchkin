@@ -25,11 +25,14 @@ public class Game {
 		 
 		 
 		 Log SystemLog = new Log();
-		 SystemLog.addInfo("Создание персонажа..."+"\n");
-		 Character gamer1 = new Character("Sking91");
-		 SystemLog.addInfo(gamer1.getInfo());
-		 SystemLog.addInfo("Генерация карт игрока..."+"\n");
+		 SystemLog.addInfo("Генерация колоды карт..."+"\n");
 		 PackGenerate GamerPack = new PackGenerate();
+		 SystemLog.addInfo("Создание персонажа и раздача ему карт..."+"\n");
+		 Character gamer1 = new Character("Sking91");
+		 SystemLog.addInfo(gamer1.getCharacterInfo());
+		 SystemLog.addInfo(gamer1.getCardInfoString());
+		 
+		 SystemLog.addInfo("*Системная информация.Карты находящиеся в колодах"+"\n");
 		 SystemLog.addInfo(GamerPack.DoorsPack.getCardInfo());
 		 SystemLog.addInfo(GamerPack.TreasuresPack.getCardInfo()); 
 		 SystemLog.getInfo();
