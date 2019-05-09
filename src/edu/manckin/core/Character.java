@@ -15,20 +15,30 @@ public class Character {
 		TreasuresPack = new Treasures("Меч убийства всего и вся кроме кальмаров",3);
 	}
 	
-	String getCharacterInfo(){
+	/**
+	 * Метод вывода характеристик персонажа
+	 * @param pShowType - выводить ли характеристики на экран или возвращать только как текстовое значение
+	 * @return
+	 */
+	String getCharacterInfo(Boolean pShowType){
 		String sResult;
 		sResult ="Характеристики персонажа"+"\n";
 		sResult = sResult +"Никнейм: " + sNickName + "\n";
 		sResult = sResult +"Уровень: " + numLvl + "\n";
 		sResult = sResult +"Сила: " + numBonuses + "\n";
 		
-		System.out.println("Характеристики персонажа");
-		System.out.println("Никнейм: " + sNickName);
-		System.out.println("Уровень: " + numLvl);
-		System.out.println("Сила: " + numBonuses);
-		System.out.println("");
+		if(pShowType ==true){
+			System.out.println("Характеристики персонажа");
+			System.out.println("Никнейм: " + sNickName);
+			System.out.println("Уровень: " + numLvl);
+			System.out.println("Сила: " + numBonuses);
+			System.out.println("");	
+		}
+		
 		return sResult;
 	}
+	
+	
 	String getCardInfoString(){
 		String sResult;
 		sResult ="Карты игрока "+sNickName+" \n";

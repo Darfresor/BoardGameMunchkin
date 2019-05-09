@@ -39,7 +39,7 @@ public class Game {
 		 PackGenerate GamerPack = new PackGenerate();
 		 SystemLog.addInfo("Создание персонажа и раздача ему карт..."+"\n");
 		 Character gamer1 = new Character("Sking91");
-		 SystemLog.addInfo(gamer1.getCharacterInfo());
+		 SystemLog.addInfo(gamer1.getCharacterInfo(false));
 		 SystemLog.addInfo(gamer1.getCardInfoString());
 		 
 		 SystemLog.addInfo("*Системная информация.Карты находящиеся в колодах"+"\n");
@@ -64,7 +64,7 @@ public class Game {
 		        }
 		      
 		        if(isMenuPoint==1) {
-		        	gamer1.getCharacterInfo();
+		        	gamer1.getCharacterInfo(true);
 		      }
 		        
 		 }
