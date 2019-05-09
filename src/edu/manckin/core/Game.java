@@ -6,11 +6,18 @@ import java.io.InputStreamReader;
 
 public class Game {
 	
+	
+	
+	/**
+	 * Выводит игровое меню на экран
+	 * @param MenuType - номер пункта меню
+	 * @return
+	 */
 	 static String ShowMenu(Integer MenuType){
 		 String sResult = null;
 		if(MenuType ==1){
 			sResult ="Выберите действие:"+"\n";
-			sResult = sResult + "1.Статус персонажа"+"\n";
+			sResult = sResult + "1.Статус персонажа(игрок)"+"\n";
 			sResult = sResult + "2.Экипировка"+"\n";
 			sResult = sResult + "3.Открыть дверь"+"\n";
 			sResult = sResult + "0.Выход"+"\n";	
@@ -19,6 +26,9 @@ public class Game {
 		}
 		return sResult;
 	}
+	 
+	 
+	 
 	
 	 public static void main(String[] args) {	
 		 Integer isMenuPoint = -1;
@@ -52,6 +62,10 @@ public class Game {
 		        catch (IOException e) {
 		            e.printStackTrace();
 		        }
+		      
+		        if(isMenuPoint==1) {
+		        	gamer1.getCharacterInfo();
+		      }
 		        
 		 }
 		 

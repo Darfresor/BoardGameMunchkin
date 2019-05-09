@@ -22,6 +22,11 @@ public class Character {
 		sResult = sResult +"Уровень: " + numLvl + "\n";
 		sResult = sResult +"Сила: " + numBonuses + "\n";
 		
+		System.out.println("Характеристики персонажа");
+		System.out.println("Никнейм: " + sNickName);
+		System.out.println("Уровень: " + numLvl);
+		System.out.println("Сила: " + numBonuses);
+		System.out.println("");
 		return sResult;
 	}
 	String getCardInfoString(){
